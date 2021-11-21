@@ -15,6 +15,8 @@ spec:
     path: argocd/apps/
     repoURL: 'git@github.com:lakshmojirao999/argocd-lab.git'
     targetRevision: {{ .Values.spec.source.targetRevision }}
+    directory:
+      recurse: true    
   project: default
   syncPolicy:
     automated:
