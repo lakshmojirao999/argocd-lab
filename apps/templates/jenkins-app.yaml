@@ -12,7 +12,7 @@ spec:
     namespace: jenkins
     server: 'https://kubernetes.default.svc'
   source:
-    path: argocd/jenkins/
+    path: jenkins/
     repoURL: 'git@github.com:lakshmojirao999/argocd-lab.git'
     targetRevision: {{ .Values.spec.source.targetRevision }}
     directory:
