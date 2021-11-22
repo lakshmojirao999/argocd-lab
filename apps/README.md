@@ -15,3 +15,7 @@ helm upgrade --install \
     --set controller.args.appResyncPeriod=30 \
     --wait
 ```
+
+```
+kubectl exec --namespace default -it svc/jenkins -c jenkins -- /bin/cat /run/secrets/chart-admin-password && echo
+```
