@@ -565,7 +565,6 @@ service:
   ## @param service.type Service type
   ##
   type: ClusterIP
-  #type: LoadBalancer
   ## @param service.port Service HTTP port
   ##
   port: 80
