@@ -567,7 +567,7 @@ service:
   type: ClusterIP
   ## @param service.port Service HTTP port
   ##
-  port: 8080
+  port: 80
   ## @param service.httpsPort Service HTTPS port
   ##
   #httpsPort: 443
