@@ -567,10 +567,10 @@ service:
   type: ClusterIP
   ## @param service.port Service HTTP port
   ##
-  port: 80
+  port: 8080
   ## @param service.httpsPort Service HTTPS port
   ##
-  httpsPort: 443
+  #httpsPort: 443
   ## @param service.nodePorts [object] Specify the nodePort(s) value(s) for the LoadBalancer and NodePort service types.
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
   ##
@@ -692,7 +692,7 @@ healthIngress:
   pathType: ImplementationSpecific
   ## @param healthIngress.hostname When the health ingress is enabled, a host pointing to this will be created
   ##
-  hostname: example.local
+  hostname: nginx.192.168.1.2.nip.io
   ## @param healthIngress.annotations Additional annotations for the Ingress resource. To enable certificate autogeneration, place here your cert-manager annotations.
   ## For a full list of possible ingress annotations, please see
   ## ref: https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/nginx-configuration/annotations.md
