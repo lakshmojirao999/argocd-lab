@@ -15,3 +15,8 @@ helm upgrade --install \
     --set controller.args.appResyncPeriod=30 \
     --wait
 ```
+
+# Deploy app of apps
+```
+helm template . -s templates/main-app.yaml  | kubectl delete -f-
+```
